@@ -1,0 +1,262 @@
+IQ-TREE multicore version 1.6.12 for Linux 64-bit built Aug 15 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    fermat (AVX2, FMA3, 1009 GB RAM)
+Command: ../../iqtree -s HAT1_MSA_trimmed_gblocks_h3.fasta -m TEST -bb 1000 -alrt 1000
+Seed:    933129 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Nov 28 15:57:29 2023
+Kernel:  AVX+FMA - 1 threads (128 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 128 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file HAT1_MSA_trimmed_gblocks_h3.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 49 sequences with 1213 columns, 890 distinct patterns
+678 parsimony-informative, 196 singleton sites, 338 constant sites
+                                                   Gap/Ambiguity  Composition  p-value
+   1  Bat_ENSMLUP00000015650                               0.25%    passed     22.09%
+   2  Nine-banded_armadillo_ENSDNOP00000009190             0.00%    passed     36.41%
+   3  Large_flying_fox_ENSPVAP00000010680                  0.00%    passed     19.17%
+   4  Alpaka_ENSVPAP00000001693                            0.00%    passed     34.30%
+   5  American_bison_ENSBBBP00000024220                    0.00%    passed     25.43%
+   6  Blue_whale_ENSBMSP00010027784                        0.00%    passed     18.12%
+   7  Beluga_ENSDLEP00000025507                            0.00%    passed     17.25%
+   8  Giant_panda_ENSAMEP00000008940                       0.00%    passed     52.62%
+   9  Cat_ENSFCAP00000002278                               0.00%    passed     66.21%
+  10  Gorilla_ENSGGOP00000009140                           0.00%    passed     35.51%
+  11  Chimp_ENSPTRP00000021597                             0.00%    passed     32.78%
+  12  Human_ENSP00000264108                                0.00%    passed     35.51%
+  13  Lemur_ENSMICP00000006339                             0.00%    passed     27.63%
+  14  Elephant_ENSLAFP00000008558                          0.25%    passed     41.17%
+  15  Rat_ENSRNOP00000079274                               0.00%    passed     60.49%
+  16  Small_Madagascar_hedgehog_ENSETEP00000002072        14.92%    passed     16.77%
+  17  Mouse_ENSMUSP00000107750                             0.00%    passed     84.32%
+  18  Hoffmanns_two-fingered_sloth_ENSCHOP00000010794     28.85%    passed     33.23%
+  19  Chinese_shoftshell_turtle_ENSPSIP00000015233         0.00%    passed     92.64%
+  20  Abingdon_island_giant_tortoise_ENSCABP00000009333    0.00%    passed     97.64%
+  21  Western_painted_turtle_ENSCPBP00000005430            0.00%    passed     96.11%
+  22  Australian_saltwater_crocodile_ENSCPRP00005020148    0.00%    passed     82.14%
+  23  Pink-footed_goose_ENSABRP00000027880                 0.00%    passed     93.33%
+  24  Golden_eagle_ENSACCP00020012393                      0.00%    passed     99.91%
+  25  Kakapo_ENSSHBP00005005177                            0.00%    passed     97.73%
+  26  Chicken_ENSGALP00010033521                           0.00%    passed     92.99%
+  27  Koala_ENSPCIP00000041740                             0.00%    passed     27.73%
+  28  Wombat_ENSVURP00010025879                            0.00%    passed     36.10%
+  29  Tasmanian_devil_ENSSHAP00000026031                   0.00%    passed     20.30%
+  30  Opossum_ENSMODP00000011048                           0.00%    passed     14.64%
+  31  Platypus_ENSOANP00000047440                          0.00%    passed     28.23%
+  32  Tiger_snake_ENSNSUP00000016050                       0.00%    passed     25.61%
+  33  Eastern_brown_snake_ENSPTXP00000000767               0.00%    passed     21.00%
+  34  Cobra_ENSNNAP00000000298                             0.00%    passed     30.16%
+  35  Lizard_ENSPMRP00000001555                            0.00%    passed     93.18%
+  36  Green_anole_ENSACAP00000015936                       0.00%    passed     69.32%
+  37  Tuatara_ENSSPUP00000014673                           9.65%    passed     56.66%
+  38  Nine-banded_armadillo_ENSDNOP00000031085             5.94%    passed     17.76%
+  39  Coelacanth_ENSLACP00000006167                        0.00%    passed     56.68%
+  40  Leishan_spiny_toad_ENSLLEP00000026650                0.00%    passed     14.03%
+  41  Tropical_clawed_frog_ENSXETP00000016421              0.00%    passed     65.85%
+  42  Gar_ENSLOCP00000009281                               0.00%    failed      0.46%
+  43  Zebrafish_ENSDARP00000044127                         0.00%    failed      0.00%
+  44  Mexican_tetra_ENSAMXP00000011734                     0.00%    failed      0.00%
+  45  Midas_cichlid_ENSACIP00000001383                     6.51%    failed      0.00%
+  46  Clown_anemone_fish_ENSAOCP00000028612                0.25%    failed      0.00%
+  47  Lamprey_ENSPMAP00000006991                          36.19%    failed      0.00%
+  48  Hagfish_ENSEBUP00000012301                           0.58%    failed      0.07%
+  49  Elephant_shark_ENSCMIP00000030593                    0.25%    failed      0.00%
+****  TOTAL                                                2.11%  8 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.005 seconds
+NOTE: ModelFinder requires 9 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 1213) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            19325.868    95  38841.735    38858.064    39326.316
+  2  JC+I          18655.518    96  37503.037    37519.725    37992.718
+  3  JC+G4         18234.341    96  36660.683    36677.371    37150.365
+  4  JC+I+G4       18230.463    97  36654.926    36671.977    37149.708
+  5  F81+F         19337.948    98  38871.896    38889.315    39371.780
+  6  F81+F+I       18688.950    99  37575.900    37593.690    38080.884
+  7  F81+F+G4      18288.205    99  36774.409    36792.199    37279.394
+  8  F81+F+I+G4    18282.176    100 36764.353    36782.518    37274.438
+  9  K2P           18742.410    96  37676.820    37693.508    38166.502
+ 10  K2P+I         18042.181    97  36278.361    36295.413    36773.144
+ 11  K2P+G4        17563.313    97  35320.627    35337.678    35815.409
+ 12  K2P+I+G4      17559.846    98  35315.692    35333.110    35815.575
+ 13  HKY+F         18758.709    99  37715.417    37733.207    38220.402
+ 14  HKY+F+I       18092.806    100 36385.611    36403.777    36895.697
+ 15  HKY+F+G4      17622.968    100 35445.937    35464.102    35956.022
+ 16  HKY+F+I+G4    17618.774    101 35439.547    35458.093    35954.733
+ 17  TNe           18736.535    97  37667.071    37684.122    38161.854
+ 18  TNe+I         18038.118    98  36272.236    36289.654    36772.119
+ 19  TNe+G4        17562.964    98  35321.928    35339.347    35821.812
+ 20  TNe+I+G4      17559.124    99  35316.248    35334.038    35821.233
+ 21  TN+F          18728.961    100 37657.921    37676.087    38168.007
+ 22  TN+F+I        18071.902    101 36345.805    36364.350    36860.991
+ 23  TN+F+G4       17610.427    101 35422.853    35441.399    35938.039
+ 24  TN+F+I+G4     17605.264    102 35414.527    35433.457    35934.814
+ 25  K3P           18742.407    97  37678.813    37695.864    38173.596
+ 26  K3P+I         18042.181    98  36280.363    36297.781    36780.246
+ 27  K3P+G4        17563.307    98  35322.615    35340.033    35822.498
+ 28  K3P+I+G4      17559.707    99  35317.414    35335.203    35822.398
+ 29  K3Pu+F        18758.255    100 37716.510    37734.676    38226.595
+ 30  K3Pu+F+I      18092.770    101 36387.539    36406.085    36902.725
+ 31  K3Pu+F+G4     17622.704    101 35447.408    35465.953    35962.594
+ 32  K3Pu+F+I+G4   17618.432    102 35440.864    35459.794    35961.151
+ 33  TPM2+F        18758.476    100 37716.952    37735.117    38227.037
+ 34  TPM2+F+I      18091.313    101 36384.625    36403.171    36899.811
+ 35  TPM2+F+G4     17619.589    101 35441.177    35459.723    35956.363
+ 36  TPM2+F+I+G4   17615.500    102 35435.001    35453.930    35955.288
+ 37  TPM2u+F       18758.475    100 37716.951    37735.116    38227.036
+ 38  TPM2u+F+I     18091.312    101 36384.624    36403.169    36899.810
+ 39  TPM2u+F+G4    17619.589    101 35441.177    35459.723    35956.363
+ 40  TPM2u+F+I+G4  17615.494    102 35434.987    35453.917    35955.274
+ 41  TPM3+F        18732.538    100 37665.076    37683.241    38175.161
+ 42  TPM3+F+I      18084.105    101 36370.210    36388.755    36885.396
+ 43  TPM3+F+G4     17609.152    101 35420.304    35438.850    35935.490
+ 44  TPM3+F+I+G4   17605.326    102 35414.651    35433.581    35934.938
+ 45  TPM3u+F       18732.538    100 37665.076    37683.241    38175.161
+ 46  TPM3u+F+I     18084.104    101 36370.209    36388.754    36885.395
+ 47  TPM3u+F+G4    17609.152    101 35420.304    35438.850    35935.490
+ 48  TPM3u+F+I+G4  17605.315    102 35414.631    35433.560    35934.917
+ 49  TIMe          18736.531    98  37669.062    37686.480    38168.946
+ 50  TIMe+I        18038.118    99  36274.237    36292.027    36779.221
+ 51  TIMe+G4       17562.960    99  35323.920    35341.710    35828.904
+ 52  TIMe+I+G4     17559.046    100 35318.092    35336.257    35828.177
+ 53  TIM+F         18728.536    101 37659.071    37677.616    38174.257
+ 54  TIM+F+I       18071.878    102 36347.755    36366.685    36868.042
+ 55  TIM+F+G4      17610.155    102 35424.310    35443.240    35944.597
+ 56  TIM+F+I+G4    17604.984    103 35415.968    35435.286    35941.355
+ 57  TIM2e         18728.349    98  37652.699    37670.117    38152.582
+ 58  TIM2e+I       18024.969    99  36247.939    36265.729    36752.923
+ 59  TIM2e+G4      17536.678    99  35271.356    35289.146    35776.341
+ 60  TIM2e+I+G4    17533.336    100 35266.671    35284.837    35776.757
+ 61  TIM2+F        18728.780    101 37659.560    37678.105    38174.746
+ 62  TIM2+F+I      18070.658    102 36345.317    36364.246    36865.604
+ 63  TIM2+F+G4     17606.775    102 35417.550    35436.480    35937.837
+ 64  TIM2+F+I+G4   17601.821    103 35409.642    35428.960    35935.030
+ 65  TIM3e         18729.788    98  37655.575    37672.993    38155.459
+ 66  TIM3e+I       18037.676    99  36273.351    36291.141    36778.335
+ 67  TIM3e+G4      17562.040    99  35322.079    35339.869    35827.063
+ 68  TIM3e+I+G4    17558.248    100 35316.497    35334.662    35826.582
+ 69  TIM3+F        18702.970    101 37607.939    37626.485    38123.125
+ 70  TIM3+F+I      18063.863    102 36331.726    36350.656    36852.013
+ 71  TIM3+F+G4     17595.112    102 35394.223    35413.153    35914.510
+ 72  TIM3+F+I+G4   17590.477    103 35386.954    35406.272    35912.342
+ 73  TVMe          18727.459    99  37652.918    37670.708    38157.903
+ 74  TVMe+I        18028.491    100 36256.981    36275.147    36767.066
+ 75  TVMe+G4       17535.958    100 35271.916    35290.081    35782.001
+ 76  TVMe+I+G4     17532.969    101 35267.939    35286.484    35783.125
+ 77  TVM+F         18732.262    102 37668.523    37687.453    38188.810
+ 78  TVM+F+I       18082.626    103 36371.252    36390.570    36896.639
+ 79  TVM+F+G4      17605.686    103 35417.372    35436.691    35942.760
+ 80  TVM+F+I+G4    17602.037    104 35412.074    35431.785    35942.562
+ 81  SYM           18721.629    100 37643.259    37661.424    38153.344
+ 82  SYM+I         18024.551    101 36251.102    36269.647    36766.288
+ 83  SYM+G4        17535.699    101 35273.398    35291.943    35788.584
+ 84  SYM+I+G4      17532.464    102 35268.927    35287.857    35789.214
+ 85  GTR+F         18702.728    103 37611.456    37630.775    38136.844
+ 86  GTR+F+I       18062.603    104 36333.205    36352.917    36863.694
+ 87  GTR+F+G4      17591.388    104 35390.775    35410.487    35921.264
+ 88  GTR+F+I+G4    17587.003    105 35384.007    35404.115    35919.596
+Akaike Information Criterion:           TIM2e+I+G4
+Corrected Akaike Information Criterion: TIM2e+I+G4
+Bayesian Information Criterion:         TIM2e+G4
+Best-fit model: TIM2e+G4 chosen according to BIC
+
+All model information printed to HAT1_MSA_trimmed_gblocks_h3.fasta.model.gz
+CPU time for ModelFinder: 8.328 seconds (0h:0m:8s)
+Wall-clock time for ModelFinder: 8.498 seconds (0h:0m:8s)
+Generating 1000 samples for ultrafast bootstrap (seed: 933129)...
+
+NOTE: 9 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -18320.662
+2. Current log-likelihood: -17779.744
+3. Current log-likelihood: -17538.571
+4. Current log-likelihood: -17536.701
+Optimal log-likelihood: -17536.678
+Rate parameters:  A-C: 1.77878  A-G: 5.82497  A-T: 1.77878  C-G: 1.00000  C-T: 6.10593  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Gamma shape alpha: 0.536
+Parameters optimization took 4 rounds (0.399 sec)
+Computing ML distances based on estimated model parameters... 0.036 sec
+Computing BIONJ tree...
+0.044 seconds
+Log-likelihood of BIONJ tree: -17547.000
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.545 second
+Computing log-likelihood of 98 initial trees ... 1.952 seconds
+Current best score: -17526.954
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -17522.898
+Iteration 10 / LogL: -17522.903 / Time: 0h:0m:4s
+Iteration 20 / LogL: -17522.900 / Time: 0h:0m:6s
+Finish initializing candidate tree set (2)
+Current best tree score: -17522.898 / CPU time: 5.886
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -17524.358 / Time: 0h:0m:9s (0h:0m:22s left)
+Iteration 40 / LogL: -17523.127 / Time: 0h:0m:11s (0h:0m:17s left)
+Iteration 50 / LogL: -17523.722 / Time: 0h:0m:13s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -17557.733
+UPDATE BEST LOG-LIKELIHOOD: -17522.897
+Iteration 60 / LogL: -17522.927 / Time: 0h:0m:16s (0h:0m:11s left)
+Iteration 70 / LogL: -17522.906 / Time: 0h:0m:18s (0h:0m:8s left)
+Iteration 80 / LogL: -17523.198 / Time: 0h:0m:20s (0h:0m:5s left)
+Iteration 90 / LogL: -17522.909 / Time: 0h:0m:22s (0h:0m:2s left)
+Iteration 100 / LogL: -17523.397 / Time: 0h:0m:25s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -17558.467
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.999
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:25s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -17522.897
+Optimal log-likelihood: -17522.896
+Rate parameters:  A-C: 1.81391  A-G: 5.91766  A-T: 1.81391  C-G: 1.00000  C-T: 6.22347  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Gamma shape alpha: 0.531
+Parameters optimization took 1 rounds (0.044 sec)
+BEST SCORE FOUND : -17522.896
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+1.590 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file HAT1_MSA_trimmed_gblocks_h3.fasta.splits.nex
+Total tree length: 5.496
+
+Total number of iterations: 102
+CPU time used for tree search: 24.504 sec (0h:0m:24s)
+Wall-clock time used for tree search: 24.718 sec (0h:0m:24s)
+Total CPU time used: 26.784 sec (0h:0m:26s)
+Total wall-clock time used: 27.306 sec (0h:0m:27s)
+
+Computing bootstrap consensus tree...
+Reading input file HAT1_MSA_trimmed_gblocks_h3.fasta.splits.nex...
+49 taxa and 221 splits.
+Consensus tree written to HAT1_MSA_trimmed_gblocks_h3.fasta.contree
+Reading input trees file HAT1_MSA_trimmed_gblocks_h3.fasta.contree
+Log-likelihood of consensus tree: -17523.103
+
+Analysis results written to: 
+  IQ-TREE report:                HAT1_MSA_trimmed_gblocks_h3.fasta.iqtree
+  Maximum-likelihood tree:       HAT1_MSA_trimmed_gblocks_h3.fasta.treefile
+  Likelihood distances:          HAT1_MSA_trimmed_gblocks_h3.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          HAT1_MSA_trimmed_gblocks_h3.fasta.splits.nex
+  Consensus tree:                HAT1_MSA_trimmed_gblocks_h3.fasta.contree
+  Screen log file:               HAT1_MSA_trimmed_gblocks_h3.fasta.log
+
+Date and Time: Tue Nov 28 15:58:06 2023

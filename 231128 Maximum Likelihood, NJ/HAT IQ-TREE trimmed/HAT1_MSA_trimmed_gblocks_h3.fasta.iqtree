@@ -1,0 +1,418 @@
+IQ-TREE 1.6.12 built Aug 15 2019
+
+Input file name: HAT1_MSA_trimmed_gblocks_h3.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 933129
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 49 sequences with 1213 nucleotide sites
+Number of constant sites: 339 (= 27.9472% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 339 (= 27.9472% of all sites)
+Number of parsimony informative sites: 678
+Number of distinct site patterns: 890
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2e+G4
+
+List of models sorted by BIC scores: 
+
+Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+TIM2e+G4        -17536.6781  35271.3562 - 0.0467  35289.1460 + 0.0618  35776.3406 + 0.5239
+TIM2e+I+G4      -17533.3357  35266.6714 + 0.4860  35284.8368 + 0.5328  35776.7566 + 0.4255
+TVMe+G4         -17535.9579  35271.9157 - 0.0353  35290.0812 - 0.0387  35782.0009 - 0.0309
+TVMe+I+G4       -17532.9693  35267.9386 + 0.2579  35286.4841 + 0.2338  35783.1247 - 0.0176
+SYM+G4          -17535.6988  35273.3976 - 0.0168  35291.9430 - 0.0153  35788.5836 - 0.0012
+SYM+I+G4        -17532.4637  35268.9275 + 0.1573  35287.8572 + 0.1177  35789.2144 - 0.0008
+K2P+G4          -17563.3133  35320.6267 - 0.0000  35337.6778 - 0.0000  35815.4093 - 0.0000
+K2P+I+G4        -17559.8458  35315.6916 - 0.0000  35333.1099 - 0.0000  35815.5750 - 0.0000
+TNe+I+G4        -17559.1242  35316.2485 - 0.0000  35334.0382 - 0.0000  35821.2328 - 0.0000
+TNe+G4          -17562.9642  35321.9284 - 0.0000  35339.3467 - 0.0000  35821.8118 - 0.0000
+K3P+I+G4        -17559.7069  35317.4137 - 0.0000  35335.2035 - 0.0000  35822.3981 - 0.0000
+K3P+G4          -17563.3074  35322.6149 - 0.0000  35340.0332 - 0.0000  35822.4983 - 0.0000
+TIM3e+I+G4      -17558.2483  35316.4965 - 0.0000  35334.6620 - 0.0000  35826.5817 - 0.0000
+TIM3e+G4        -17562.0395  35322.0791 - 0.0000  35339.8688 - 0.0000  35827.0634 - 0.0000
+TIMe+I+G4       -17559.0458  35318.0917 - 0.0000  35336.2571 - 0.0000  35828.1769 - 0.0000
+TIMe+G4         -17562.9600  35323.9200 - 0.0000  35341.7098 - 0.0000  35828.9044 - 0.0000
+TIM3+F+I+G4     -17590.4771  35386.9541 - 0.0000  35406.2724 - 0.0000  35912.3419 - 0.0000
+TIM3+F+G4       -17595.1117  35394.2234 - 0.0000  35413.1531 - 0.0000  35914.5103 - 0.0000
+GTR+F+I+G4      -17587.0033  35384.0065 - 0.0000  35404.1149 - 0.0000  35919.5960 - 0.0000
+GTR+F+G4        -17591.3877  35390.7753 - 0.0000  35410.4865 - 0.0000  35921.2639 - 0.0000
+TN+F+I+G4       -17605.2636  35414.5273 - 0.0000  35433.4570 - 0.0000  35934.8142 - 0.0000
+TPM3u+F+I+G4    -17605.3153  35414.6306 - 0.0000  35433.5603 - 0.0000  35934.9175 - 0.0000
+TPM3+F+I+G4     -17605.3256  35414.6513 - 0.0000  35433.5810 - 0.0000  35934.9382 - 0.0000
+TIM2+F+I+G4     -17601.8209  35409.6418 - 0.0000  35428.9601 - 0.0000  35935.0295 - 0.0000
+TPM3+F+G4       -17609.1520  35420.3040 - 0.0000  35438.8495 - 0.0000  35935.4901 - 0.0000
+TPM3u+F+G4      -17609.1522  35420.3043 - 0.0000  35438.8498 - 0.0000  35935.4904 - 0.0000
+TIM2+F+G4       -17606.7752  35417.5505 - 0.0000  35436.4802 - 0.0000  35937.8374 - 0.0000
+TN+F+G4         -17610.4267  35422.8534 - 0.0000  35441.3989 - 0.0000  35938.0395 - 0.0000
+TIM+F+I+G4      -17604.9839  35415.9677 - 0.0000  35435.2860 - 0.0000  35941.3555 - 0.0000
+TVM+F+I+G4      -17602.0368  35412.0736 - 0.0000  35431.7848 - 0.0000  35942.5622 - 0.0000
+TVM+F+G4        -17605.6862  35417.3725 - 0.0000  35436.6908 - 0.0000  35942.7602 - 0.0000
+TIM+F+G4        -17610.1551  35424.3102 - 0.0000  35443.2399 - 0.0000  35944.5971 - 0.0000
+HKY+F+I+G4      -17618.7737  35439.5474 - 0.0000  35458.0929 - 0.0000  35954.7335 - 0.0000
+TPM2u+F+I+G4    -17615.4936  35434.9872 - 0.0000  35453.9169 - 0.0000  35955.2741 - 0.0000
+TPM2+F+I+G4     -17615.5004  35435.0007 - 0.0000  35453.9304 - 0.0000  35955.2876 - 0.0000
+HKY+F+G4        -17622.9685  35445.9369 - 0.0000  35464.1024 - 0.0000  35956.0221 - 0.0000
+TPM2u+F+G4      -17619.5886  35441.1771 - 0.0000  35459.7226 - 0.0000  35956.3632 - 0.0000
+TPM2+F+G4       -17619.5886  35441.1773 - 0.0000  35459.7227 - 0.0000  35956.3633 - 0.0000
+K3Pu+F+I+G4     -17618.4322  35440.8643 - 0.0000  35459.7940 - 0.0000  35961.1512 - 0.0000
+K3Pu+F+G4       -17622.7040  35447.4080 - 0.0000  35465.9534 - 0.0000  35962.5940 - 0.0000
+TIM2e+I         -18024.9695  36247.9389 - 0.0000  36265.7287 - 0.0000  36752.9233 - 0.0000
+SYM+I           -18024.5509  36251.1017 - 0.0000  36269.6472 - 0.0000  36766.2878 - 0.0000
+TVMe+I          -18028.4906  36256.9812 - 0.0000  36275.1467 - 0.0000  36767.0664 - 0.0000
+TNe+I           -18038.1178  36272.2357 - 0.0000  36289.6540 - 0.0000  36772.1191 - 0.0000
+K2P+I           -18042.1807  36278.3614 - 0.0000  36295.4125 - 0.0000  36773.1440 - 0.0000
+TIM3e+I         -18037.6755  36273.3511 - 0.0000  36291.1408 - 0.0000  36778.3354 - 0.0000
+TIMe+I          -18038.1185  36274.2370 - 0.0000  36292.0267 - 0.0000  36779.2213 - 0.0000
+K3P+I           -18042.1815  36280.3629 - 0.0000  36297.7812 - 0.0000  36780.2464 - 0.0000
+TIM3+F+I        -18063.8631  36331.7262 - 0.0000  36350.6559 - 0.0000  36852.0131 - 0.0000
+TN+F+I          -18071.9023  36345.8045 - 0.0000  36364.3500 - 0.0000  36860.9906 - 0.0000
+GTR+F+I         -18062.6027  36333.2053 - 0.0000  36352.9165 - 0.0000  36863.6939 - 0.0000
+TIM2+F+I        -18070.6584  36345.3167 - 0.0000  36364.2464 - 0.0000  36865.6036 - 0.0000
+TIM+F+I         -18071.8776  36347.7552 - 0.0000  36366.6849 - 0.0000  36868.0421 - 0.0000
+TPM3u+F+I       -18084.1043  36370.2086 - 0.0000  36388.7541 - 0.0000  36885.3947 - 0.0000
+TPM3+F+I        -18084.1048  36370.2097 - 0.0000  36388.7552 - 0.0000  36885.3957 - 0.0000
+HKY+F+I         -18092.8057  36385.6115 - 0.0000  36403.7770 - 0.0000  36895.6967 - 0.0000
+TVM+F+I         -18082.6258  36371.2517 - 0.0000  36390.5700 - 0.0000  36896.6394 - 0.0000
+TPM2u+F+I       -18091.3119  36384.6238 - 0.0000  36403.1692 - 0.0000  36899.8098 - 0.0000
+TPM2+F+I        -18091.3126  36384.6253 - 0.0000  36403.1707 - 0.0000  36899.8113 - 0.0000
+K3Pu+F+I        -18092.7696  36387.5392 - 0.0000  36406.0846 - 0.0000  36902.7252 - 0.0000
+JC+I+G4         -18230.4629  36654.9258 - 0.0000  36671.9770 - 0.0000  37149.7085 - 0.0000
+JC+G4           -18234.3414  36660.6829 - 0.0000  36677.3710 - 0.0000  37150.3646 - 0.0000
+F81+F+I+G4      -18282.1764  36764.3527 - 0.0000  36782.5182 - 0.0000  37274.4379 - 0.0000
+F81+F+G4        -18288.2047  36774.4095 - 0.0000  36792.1992 - 0.0000  37279.3938 - 0.0000
+JC+I            -18655.5183  37503.0366 - 0.0000  37519.7248 - 0.0000  37992.7184 - 0.0000
+F81+F+I         -18688.9500  37575.9000 - 0.0000  37593.6898 - 0.0000  38080.8844 - 0.0000
+TIM3+F          -18702.9695  37607.9390 - 0.0000  37626.4845 - 0.0000  38123.1251 - 0.0000
+GTR+F           -18702.7281  37611.4562 - 0.0000  37630.7745 - 0.0000  38136.8440 - 0.0000
+TIM2e           -18728.3494  37652.6987 - 0.0000  37670.1170 - 0.0000  38152.5822 - 0.0000
+SYM             -18721.6293  37643.2586 - 0.0000  37661.4240 - 0.0000  38153.3438 - 0.0000
+TIM3e           -18729.7876  37655.5752 - 0.0000  37672.9935 - 0.0000  38155.4587 - 0.0000
+TVMe            -18727.4592  37652.9185 - 0.0000  37670.7082 - 0.0000  38157.9028 - 0.0000
+TNe             -18736.5355  37667.0710 - 0.0000  37684.1221 - 0.0000  38161.8536 - 0.0000
+K2P             -18742.4100  37676.8199 - 0.0000  37693.5081 - 0.0000  38166.5017 - 0.0000
+TN+F            -18728.9607  37657.9215 - 0.0000  37676.0869 - 0.0000  38168.0067 - 0.0000
+TIMe            -18736.5311  37669.0621 - 0.0000  37686.4804 - 0.0000  38168.9456 - 0.0000
+K3P             -18742.4067  37678.8133 - 0.0000  37695.8644 - 0.0000  38173.5960 - 0.0000
+TIM+F           -18728.5355  37659.0710 - 0.0000  37677.6165 - 0.0000  38174.2570 - 0.0000
+TIM2+F          -18728.7798  37659.5596 - 0.0000  37678.1051 - 0.0000  38174.7457 - 0.0000
+TPM3u+F         -18732.5378  37665.0755 - 0.0000  37683.2410 - 0.0000  38175.1607 - 0.0000
+TPM3+F          -18732.5379  37665.0758 - 0.0000  37683.2413 - 0.0000  38175.1610 - 0.0000
+TVM+F           -18732.2615  37668.5230 - 0.0000  37687.4528 - 0.0000  38188.8099 - 0.0000
+HKY+F           -18758.7087  37715.4174 - 0.0000  37733.2072 - 0.0000  38220.4018 - 0.0000
+K3Pu+F          -18758.2550  37716.5101 - 0.0000  37734.6755 - 0.0000  38226.5953 - 0.0000
+TPM2u+F         -18758.4754  37716.9508 - 0.0000  37735.1163 - 0.0000  38227.0360 - 0.0000
+TPM2+F          -18758.4760  37716.9519 - 0.0000  37735.1174 - 0.0000  38227.0371 - 0.0000
+JC              -19325.8675  38841.7350 - 0.0000  38858.0645 - 0.0000  39326.3160 - 0.0000
+F81+F           -19337.9482  38871.8963 - 0.0000  38889.3147 - 0.0000  39371.7798 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2e+G4
+
+Rate parameter R:
+
+  A-C: 1.8139
+  A-G: 5.9177
+  A-T: 1.8139
+  C-G: 1.0000
+  C-T: 6.2235
+  G-T: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  A    -1.074    0.2042    0.6661    0.2042
+  C    0.2042    -1.017    0.1126    0.7005
+  G    0.6661    0.1126   -0.8912    0.1126
+  T    0.2042    0.7005    0.1126    -1.017
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5305
+
+ Category  Relative_rate  Proportion
+  1         0.03918        0.25
+  2         0.2714         0.25
+  3         0.8413         0.25
+  4         2.848          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -17522.8960 (s.e. 393.8362)
+Unconstrained log-likelihood (without tree): -7680.5842
+Number of free parameters (#branches + #model parameters): 99
+Akaike information criterion (AIC) score: 35243.7920
+Corrected Akaike information criterion (AICc) score: 35261.5818
+Bayesian information criterion (BIC) score: 35748.7764
+
+Total tree length (sum of branch lengths): 5.4958
+Sum of internal branch lengths: 1.8806 (34.2180% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Bat_ENSMLUP00000015650' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--Bat_ENSMLUP00000015650
+|
+|                 +--Nine-banded_armadillo_ENSDNOP00000009190
+|              +--| (81.6/98)
+|              |  +--Nine-banded_armadillo_ENSDNOP00000031085
+|           +--| (95.9/100)
+|           |  +--Hoffmanns_two-fingered_sloth_ENSCHOP00000010794
+|        +--| (14.3/73)
+|        |  |               +--Chinese_shoftshell_turtle_ENSPSIP00000015233
+|        |  |            +--| (97.4/100)
+|        |  |            |  |  +--Abingdon_island_giant_tortoise_ENSCABP00000009333
+|        |  |            |  +--| (97.4/100)
+|        |  |            |     +--Western_painted_turtle_ENSCPBP00000005430
+|        |  |         +--| (98.5/99)
+|        |  |         |  |     +--Australian_saltwater_crocodile_ENSCPRP00005020148
+|        |  |         |  |  +--| (90.9/96)
+|        |  |         |  |  |  |     +--Pink-footed_goose_ENSABRP00000027880
+|        |  |         |  |  |  |  +--| (97.2/99)
+|        |  |         |  |  |  |  |  +--Chicken_ENSGALP00010033521
+|        |  |         |  |  |  +--| (100/100)
+|        |  |         |  |  |     |  +--Golden_eagle_ENSACCP00020012393
+|        |  |         |  |  |     +--| (81/93)
+|        |  |         |  |  |        +--Kakapo_ENSSHBP00005005177
+|        |  |         |  +--| (79.7/87)
+|        |  |         |     |              +--Tiger_snake_ENSNSUP00000016050
+|        |  |         |     |           +--| (75.4/90)
+|        |  |         |     |           |  +--Eastern_brown_snake_ENSPTXP00000000767
+|        |  |         |     |        +--| (100/100)
+|        |  |         |     |        |  +--Cobra_ENSNNAP00000000298
+|        |  |         |     |     +--| (27.8/68)
+|        |  |         |     |     |  +--Green_anole_ENSACAP00000015936
+|        |  |         |     |  +--| (100/100)
+|        |  |         |     |  |  +--Lizard_ENSPMRP00000001555
+|        |  |         |     +--| (89/95)
+|        |  |         |        +---Tuatara_ENSSPUP00000014673
+|        |  |      +--| (99.3/100)
+|        |  |      |  |     +---Coelacanth_ENSLACP00000006167
+|        |  |      |  |  +--| (43.8/67)
+|        |  |      |  |  |  |    +---Gar_ENSLOCP00000009281
+|        |  |      |  |  |  +----| (100/99)
+|        |  |      |  |  |       |        +-----Zebrafish_ENSDARP00000044127
+|        |  |      |  |  |       |     +--| (99.7/100)
+|        |  |      |  |  |       |     |  +---Mexican_tetra_ENSAMXP00000011734
+|        |  |      |  |  |       |  +--| (97.9/99)
+|        |  |      |  |  |       |  |  |   +--Midas_cichlid_ENSACIP00000001383
+|        |  |      |  |  |       |  |  +---| (100/100)
+|        |  |      |  |  |       |  |      +--Clown_anemone_fish_ENSAOCP00000028612
+|        |  |      |  |  |       +--| (48.1/57)
+|        |  |      |  |  |          |                +---------------------Lamprey_ENSPMAP00000006991
+|        |  |      |  |  |          |       +--------| (97.6/99)
+|        |  |      |  |  |          |       |        +----------------Hagfish_ENSEBUP00000012301
+|        |  |      |  |  |          +-------| (99.8/100)
+|        |  |      |  |  |                  +-------------------------Elephant_shark_ENSCMIP00000030593
+|        |  |      |  +--| (99.3/100)
+|        |  |      |     |  +------Leishan_spiny_toad_ENSLLEP00000026650
+|        |  |      |     +--| (99.7/99)
+|        |  |      |        +-----Tropical_clawed_frog_ENSXETP00000016421
+|        |  |   +--| (92.6/98)
+|        |  |   |  +--Platypus_ENSOANP00000047440
+|        |  +---| (100/100)
+|        |      |        +--Koala_ENSPCIP00000041740
+|        |      |     +--| (95.5/100)
+|        |      |     |  +--Wombat_ENSVURP00010025879
+|        |      |  +--| (89.1/97)
+|        |      |  |  +--Tasmanian_devil_ENSSHAP00000026031
+|        |      +--| (99.9/100)
+|        |         +--Opossum_ENSMODP00000011048
+|     +--| (52/33)
+|     |  |  +--Elephant_ENSLAFP00000008558
+|     |  +--| (98.8/100)
+|     |     +--Small_Madagascar_hedgehog_ENSETEP00000002072
+|  +--| (97.1/98)
+|  |  |           +**Gorilla_ENSGGOP00000009140
+|  |  |        +**| (0/76)
+|  |  |        |  +--Chimp_ENSPTRP00000021597
+|  |  |     +--| (100/100)
+|  |  |     |  +--Human_ENSP00000264108
+|  |  |  +--| (42.3/69)
+|  |  |  |  +--Lemur_ENSMICP00000006339
+|  |  +**| (40.9/33)
+|  |     |  +--Rat_ENSRNOP00000079274
+|  |     +--| (100/100)
+|  |        +--Mouse_ENSMUSP00000107750
++--| (88.9/93)
+|  |     +--Alpaka_ENSVPAP00000001693
+|  |  +--| (97.6/100)
+|  |  |  |  +--American_bison_ENSBBBP00000024220
+|  |  |  +--| (87.6/96)
+|  |  |     |  +--Blue_whale_ENSBMSP00010027784
+|  |  |     +--| (88/99)
+|  |  |        +--Beluga_ENSDLEP00000025507
+|  +**| (0/72)
+|     |  +--Giant_panda_ENSAMEP00000008940
+|     +--| (92.3/94)
+|        +--Cat_ENSFCAP00000002278
+|
++--Large_flying_fox_ENSPVAP00000010680
+
+Tree in newick format:
+
+(Bat_ENSMLUP00000015650:0.0257257292,((((((Nine-banded_armadillo_ENSDNOP00000009190:0.0093270412,Nine-banded_armadillo_ENSDNOP00000031085:0.0845069812)81.6/98:0.0045699672,Hoffmanns_two-fingered_sloth_ENSCHOP00000010794:0.0154701368)95.9/100:0.0146465840,(((((Chinese_shoftshell_turtle_ENSPSIP00000015233:0.0260350110,(Abingdon_island_giant_tortoise_ENSCABP00000009333:0.0128639648,Western_painted_turtle_ENSCPBP00000005430:0.0045392438)97.4/100:0.0092721393)97.4/100:0.0159335967,((Australian_saltwater_crocodile_ENSCPRP00005020148:0.0603465649,((Pink-footed_goose_ENSABRP00000027880:0.0125654195,Chicken_ENSGALP00010033521:0.0334895500)97.2/99:0.0123506108,(Golden_eagle_ENSACCP00020012393:0.0169205507,Kakapo_ENSSHBP00005005177:0.0199381840)81/93:0.0056647055)100/100:0.0435201708)90.9/96:0.0116127397,(((((Tiger_snake_ENSNSUP00000016050:0.0030957241,Eastern_brown_snake_ENSPTXP00000000767:0.0037911021)75.4/90:0.0058662098,Cobra_ENSNNAP00000000298:0.0073387593)100/100:0.0519850118,Green_anole_ENSACAP00000015936:0.0779926228)27.8/68:0.0085885050,Lizard_ENSPMRP00000001555:0.0427202407)100/100:0.0802047987,Tuatara_ENSSPUP00000014673:0.1092666899)89/95:0.0116311953)79.7/87:0.0058840903)98.5/99:0.0333872802,((Coelacanth_ENSLACP00000006167:0.1120194132,(Gar_ENSLOCP00000009281:0.1175763370,(((Zebrafish_ENSDARP00000044127:0.1772020066,Mexican_tetra_ENSAMXP00000011734:0.1195264296)99.7/100:0.0957059552,(Midas_cichlid_ENSACIP00000001383:0.0508669499,Clown_anemone_fish_ENSAOCP00000028612:0.0397971372)100/100:0.1308512086)97.9/99:0.0949768764,((Lamprey_ENSPMAP00000006991:0.5841554647,Hagfish_ENSEBUP00000012301:0.4563908941)97.6/99:0.2461702174,Elephant_shark_ENSCMIP00000030593:0.7077263552)99.8/100:0.2123014562)48.1/57:0.0821188442)100/99:0.1528080264)43.8/67:0.0617481788,(Leishan_spiny_toad_ENSLLEP00000026650:0.2001217684,Tropical_clawed_frog_ENSXETP00000016421:0.1801593749)99.7/99:0.0974397987)99.3/100:0.0585591754)99.3/100:0.0393033849,Platypus_ENSOANP00000047440:0.0615339952)92.6/98:0.0144289485,(((Koala_ENSPCIP00000041740:0.0047908926,Wombat_ENSVURP00010025879:0.0054765807)95.5/100:0.0062019201,Tasmanian_devil_ENSSHAP00000026031:0.0152781699)89.1/97:0.0068599579,Opossum_ENSMODP00000011048:0.0143492893)99.9/100:0.0304490889)100/100:0.1140083726)14.3/73:0.0018028844,(Elephant_ENSLAFP00000008558:0.0185217061,Small_Madagascar_hedgehog_ENSETEP00000002072:0.0365072221)98.8/100:0.0142478358)52/33:0.0015013942,((((Gorilla_ENSGGOP00000009140:0.0000026091,Chimp_ENSPTRP00000021597:0.0008471856)0/76:0.0000021676,Human_ENSP00000264108:0.0016951007)100/100:0.0195108543,Lemur_ENSMICP00000006339:0.0134826355)42.3/69:0.0017943907,(Rat_ENSRNOP00000079274:0.0211788211,Mouse_ENSMUSP00000107750:0.0351408624)100/100:0.0533538679)40.9/33:0.0008072981)97.1/98:0.0057648531,((Alpaka_ENSVPAP00000001693:0.0188390722,(American_bison_ENSBBBP00000024220:0.0122642353,(Blue_whale_ENSBMSP00010027784:0.0025508778,Beluga_ENSDLEP00000025507:0.0034383649)88/99:0.0024205649)87.6/96:0.0030744263)97.6/100:0.0077250864,(Giant_panda_ENSAMEP00000008940:0.0127056399,Cat_ENSFCAP00000002278:0.0116299750)92.3/94:0.0063227553)0/72:0.0000026585)88.9/93:0.0031841019,Large_flying_fox_ENSPVAP00000010680:0.0135529260);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -17523.103030
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Bat_ENSMLUP00000015650
+|
+|                    +--Nine-banded_armadillo_ENSDNOP00000009190
+|                 +--| (98)
+|                 |  +--Nine-banded_armadillo_ENSDNOP00000031085
+|              +--| (100)
+|              |  +--Hoffmanns_two-fingered_sloth_ENSCHOP00000010794
+|           +--| (73)
+|           |  |               +--Chinese_shoftshell_turtle_ENSPSIP00000015233
+|           |  |            +--| (100)
+|           |  |            |  |  +--Abingdon_island_giant_tortoise_ENSCABP00000009333
+|           |  |            |  +--| (100)
+|           |  |            |     +--Western_painted_turtle_ENSCPBP00000005430
+|           |  |         +--| (99)
+|           |  |         |  |     +--Australian_saltwater_crocodile_ENSCPRP00005020148
+|           |  |         |  |  +--| (96)
+|           |  |         |  |  |  |     +--Pink-footed_goose_ENSABRP00000027880
+|           |  |         |  |  |  |  +--| (99)
+|           |  |         |  |  |  |  |  +--Chicken_ENSGALP00010033521
+|           |  |         |  |  |  +--| (100)
+|           |  |         |  |  |     |  +--Golden_eagle_ENSACCP00020012393
+|           |  |         |  |  |     +--| (93)
+|           |  |         |  |  |        +--Kakapo_ENSSHBP00005005177
+|           |  |         |  +--| (87)
+|           |  |         |     |              +--Tiger_snake_ENSNSUP00000016050
+|           |  |         |     |           +--| (90)
+|           |  |         |     |           |  +--Eastern_brown_snake_ENSPTXP00000000767
+|           |  |         |     |        +--| (100)
+|           |  |         |     |        |  +--Cobra_ENSNNAP00000000298
+|           |  |         |     |     +--| (68)
+|           |  |         |     |     |  +--Green_anole_ENSACAP00000015936
+|           |  |         |     |  +--| (100)
+|           |  |         |     |  |  +--Lizard_ENSPMRP00000001555
+|           |  |         |     +--| (95)
+|           |  |         |        +---Tuatara_ENSSPUP00000014673
+|           |  |      +--| (100)
+|           |  |      |  |     +---Coelacanth_ENSLACP00000006167
+|           |  |      |  |  +--| (67)
+|           |  |      |  |  |  |    +---Gar_ENSLOCP00000009281
+|           |  |      |  |  |  +----| (99)
+|           |  |      |  |  |       |        +-----Zebrafish_ENSDARP00000044127
+|           |  |      |  |  |       |     +--| (100)
+|           |  |      |  |  |       |     |  +---Mexican_tetra_ENSAMXP00000011734
+|           |  |      |  |  |       |  +--| (99)
+|           |  |      |  |  |       |  |  |   +--Midas_cichlid_ENSACIP00000001383
+|           |  |      |  |  |       |  |  +---| (100)
+|           |  |      |  |  |       |  |      +--Clown_anemone_fish_ENSAOCP00000028612
+|           |  |      |  |  |       +--| (57)
+|           |  |      |  |  |          |                +---------------------Lamprey_ENSPMAP00000006991
+|           |  |      |  |  |          |       +--------| (99)
+|           |  |      |  |  |          |       |        +----------------Hagfish_ENSEBUP00000012301
+|           |  |      |  |  |          +-------| (100)
+|           |  |      |  |  |                  +-------------------------Elephant_shark_ENSCMIP00000030593
+|           |  |      |  +--| (100)
+|           |  |      |     |  +------Leishan_spiny_toad_ENSLLEP00000026650
+|           |  |      |     +--| (99)
+|           |  |      |        +-----Tropical_clawed_frog_ENSXETP00000016421
+|           |  |   +--| (98)
+|           |  |   |  +--Platypus_ENSOANP00000047440
+|           |  +---| (100)
+|           |      |        +--Koala_ENSPCIP00000041740
+|           |      |     +--| (100)
+|           |      |     |  +--Wombat_ENSVURP00010025879
+|           |      |  +--| (97)
+|           |      |  |  +--Tasmanian_devil_ENSSHAP00000026031
+|           |      +--| (100)
+|           |         +--Opossum_ENSMODP00000011048
+|        +--| (60)
+|        |  |  +--Rat_ENSRNOP00000079274
+|        |  +--| (100)
+|        |     +--Mouse_ENSMUSP00000107750
+|     +--| (35)
+|     |  |        +--Gorilla_ENSGGOP00000009140
+|     |  |     +--| (76)
+|     |  |     |  +--Chimp_ENSPTRP00000021597
+|     |  |  +--| (100)
+|     |  |  |  +--Human_ENSP00000264108
+|     |  +--| (69)
+|     |     +--Lemur_ENSMICP00000006339
+|  +--| (98)
+|  |  |  +--Elephant_ENSLAFP00000008558
+|  |  +--| (100)
+|  |     +--Small_Madagascar_hedgehog_ENSETEP00000002072
++--| (93)
+|  |     +--Alpaka_ENSVPAP00000001693
+|  |  +--| (100)
+|  |  |  |  +--American_bison_ENSBBBP00000024220
+|  |  |  +--| (96)
+|  |  |     |  +--Blue_whale_ENSBMSP00010027784
+|  |  |     +--| (99)
+|  |  |        +--Beluga_ENSDLEP00000025507
+|  +--| (72)
+|     |  +--Giant_panda_ENSAMEP00000008940
+|     +--| (94)
+|        +--Cat_ENSFCAP00000002278
+|
++--Large_flying_fox_ENSPVAP00000010680
+
+
+Consensus tree in newick format: 
+
+(Bat_ENSMLUP00000015650:0.0255301207,(((((((Nine-banded_armadillo_ENSDNOP00000009190:0.0092822929,Nine-banded_armadillo_ENSDNOP00000031085:0.0842390741)98:0.0054505095,Hoffmanns_two-fingered_sloth_ENSCHOP00000010794:0.0150879112)100:0.0119170589,(((((Chinese_shoftshell_turtle_ENSPSIP00000015233:0.0259146529,(Abingdon_island_giant_tortoise_ENSCABP00000009333:0.0128092972,Western_painted_turtle_ENSCPBP00000005430:0.0045204909)100:0.0092426836)100:0.0158413922,((Australian_saltwater_crocodile_ENSCPRP00005020148:0.0600864949,((Pink-footed_goose_ENSABRP00000027880:0.0125089243,Chicken_ENSGALP00010033521:0.0333368474)99:0.0123125951,(Golden_eagle_ENSACCP00020012393:0.0168482574,Kakapo_ENSSHBP00005005177:0.0198491094)93:0.0056404004)100:0.0433055239)96:0.0115770682,(((((Tiger_snake_ENSNSUP00000016050:0.0030826426,Eastern_brown_snake_ENSPTXP00000000767:0.0037744055)90:0.0058421471,Cobra_ENSNNAP00000000298:0.0073069850)100:0.0517550529,Green_anole_ENSACAP00000015936:0.0776196570)68:0.0085607517,Lizard_ENSPMRP00000001555:0.0425276872)100:0.0798267643,Tuatara_ENSSPUP00000014673:0.1087277274)95:0.0115749979)87:0.0058810559)99:0.0331951419,((Coelacanth_ENSLACP00000006167:0.1113976628,(Gar_ENSLOCP00000009281:0.1168931742,(((Zebrafish_ENSDARP00000044127:0.1762983292,Mexican_tetra_ENSAMXP00000011734:0.1189929077)100:0.0951786380,(Midas_cichlid_ENSACIP00000001383:0.0507318319,Clown_anemone_fish_ENSAOCP00000028612:0.0395662785)100:0.1302287534)99:0.0944398239,((Lamprey_ENSPMAP00000006991:0.5811110828,Hagfish_ENSEBUP00000012301:0.4538304421)99:0.2449531004,Elephant_shark_ENSCMIP00000030593:0.7043606479)100:0.2110623654)57:0.0817641641)99:0.1522579757)67:0.0615553326,(Leishan_spiny_toad_ENSLLEP00000026650:0.1988971479,Tropical_clawed_frog_ENSXETP00000016421:0.1792973884)99:0.0971378063)100:0.0582688300)100:0.0388900146,Platypus_ENSOANP00000047440:0.0613742723)98:0.0137623060,(((Koala_ENSPCIP00000041740:0.0047703555,Wombat_ENSVURP00010025879:0.0054557710)100:0.0061818462,Tasmanian_devil_ENSSHAP00000026031:0.0152114931)97:0.0068934174,Opossum_ENSMODP00000011048:0.0142301365)100:0.0310067469)100:0.1116864568)73:0.0022903026,(Rat_ENSRNOP00000079274:0.0211371552,Mouse_ENSMUSP00000107750:0.0348977461)100:0.0499516913)60:0.0031258131,(((Gorilla_ENSGGOP00000009140:0.0000026091,Chimp_ENSPTRP00000021597:0.0008429965)76:0.0000026091,Human_ENSP00000264108:0.0016871609)100:0.0192637457,Lemur_ENSMICP00000006339:0.0134742411)69:0.0025943623)35:0.0010006667,(Elephant_ENSLAFP00000008558:0.0186728869,Small_Madagascar_hedgehog_ENSETEP00000002072:0.0359910333)100:0.0148629123)98:0.0047258168,((Alpaka_ENSVPAP00000001693:0.0187215781,(American_bison_ENSBBBP00000024220:0.0122365774,(Blue_whale_ENSBMSP00010027784:0.0025413151,Beluga_ENSDLEP00000025507:0.0034252683)99:0.0023932849)96:0.0031377261)100:0.0076994857,(Giant_panda_ENSAMEP00000008940:0.0125775325,Cat_ENSFCAP00000002278:0.0116623595)94:0.0063208420)72:0.0000026132)93:0.0031727997,Large_flying_fox_ENSPVAP00000010680:0.0135931777);
+
+TIME STAMP
+----------
+
+Date and time: Tue Nov 28 15:58:06 2023
+Total CPU time used: 26.784 seconds (0h:0m:26s)
+Total wall-clock time used: 27.54464006 seconds (0h:0m:27s)
+
