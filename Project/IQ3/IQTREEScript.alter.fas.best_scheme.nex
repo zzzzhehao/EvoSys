@@ -1,0 +1,22 @@
+#nexus
+begin sets;
+  charset GENE1 = 1-314;
+  charset GENE2 = 315-434;
+  charset GENE3 = 435-801;
+  charset GENE4 = 802-1026;
+  charset GENE5 = 1027-1239;
+  charset GENE6 = 1240-1384;
+  charset GENE7 = 1385-1525;
+  charset GENE8 = 1526-1806;
+  charset GENE9 = 1807-1939;
+  charpartition mymodels =
+    LG+I+G4: GENE1,
+    LG+G4: GENE2,
+    LG+I+G4: GENE3,
+    LG+G4: GENE4,
+    LG+G4: GENE5,
+    LG+I+G4: GENE6,
+    LG+G4: GENE7,
+    LG+I+G4: GENE8,
+    LG+G4: GENE9;
+end;

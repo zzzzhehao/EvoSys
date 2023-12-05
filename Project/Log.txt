@@ -1,0 +1,8 @@
+Raw > align in MEGA (MUSCLE, export in .nex)
+Alignment concatenated manually > IQTREEScript.nex
+ALTER transformed to .fas > IQTREEScript.alter.fas
+Added Mrbayes block > BayesScript.nex
+Define patition > partition.nex
+IQTREE > IQTREEScript.alter.fas + partition.nex > ML calculation > IQ3
+	- default settings
+	> ML_IQ3.pdf
