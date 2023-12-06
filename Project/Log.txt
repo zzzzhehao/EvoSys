@@ -6,3 +6,6 @@ Define patition > partition.nex
 IQTREE > IQTREEScript.alter.fas + partition.nex > ML calculation > IQ3
 	- default settings
 	> ML_IQ3.pdf
+MrBayes > BayesScript.nex > Bayesian analysis
+	- 50,000 iterations, confirmed with TRACER
+	- visualised in FIGTREE > BayesScript.nex.con.tre.pdf
