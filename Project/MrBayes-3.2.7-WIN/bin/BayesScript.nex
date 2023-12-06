@@ -294,7 +294,7 @@ BEGIN mrbayes;
 	lset applyto=(all) nst=6 rates=invgamma;						[set a GTR+I+G model for all partitions]
 	unlink shape=(all) pinvar=(all) statefreq=(all) revmat=(all);	[specify mixed model--how parameters are shared across partitions...]
 	prset applyto=(all) ratepr=variable;							[...and allow rate to vary across partitions]
-	mcmc ngen=500000 printfreq=100 samplefreq=100;				[specify MCMC details...run length and thinning]
+	mcmc ngen=50000 printfreq=100 samplefreq=100;				[specify MCMC details...run length and thinning]
 	diagnfreq=1000 diagnstat=maxstddev;								[...MCMC diagnostics...]
 	checkpoint=yes checkfreq=1000;									[...checkpointing so runs can be restarted...]
 	nchains=4 temp=0.1;												[specify MCMCMC details]
