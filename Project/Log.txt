@@ -5,7 +5,16 @@ Added Mrbayes block > BayesScript.nex
 Define patition > partition.nex
 IQTREE > IQTREEScript.alter.fas + partition.nex > ML calculation > IQ3
 	- default settings
-	> ML_IQ3.pdf
-MrBayes > BayesScript.nex > Bayesian analysis
-	- 50,000 iterations, confirmed with TRACER
-	- visualised in FIGTREE > BayesScript.nex.con.tre.pdf
+	> IQTREEScript.pdf
+
+BayesScript-AAmodels.nex > 
+
+BEAST > b1.xml >
+	- Alignment: IQTREEScript.fas
+	- Site Model: Subst Model: WAG
+	- Clock Model: Strict Clock, Mean clock rate: 1.0
+	- Priors:
+		- Birth Death Model
+		- fossil annotation: Landpflanze: Log Normal, M=6.05, S=0.002;
+		- fossil annotation: gym1: Log Normal, monophyletic, M=5.89, S=0.004
+		- MCMC: Chain length=1000000
