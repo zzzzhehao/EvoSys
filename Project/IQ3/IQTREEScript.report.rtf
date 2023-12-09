@@ -1,266 +1,0 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww16520\viewh14360\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 IQ-TREE 1.6.12 built Aug 15 2019\
-\
-Partition file name: partition.nex\
-Input file name: IQTREEScript.alter.fas\
-Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)\
-Random seed number: 205515\
-\
-REFERENCES\
-----------\
-\
-To cite ModelFinder please use: \
-\
-Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,\
-and Lars S Jermiin (2017) ModelFinder: Fast model selection for\
-accurate phylogenetic estimates. Nature Methods, 14:587\'96589.\
-https://doi.org/10.1038/nmeth.4285\
-\
-To cite IQ-TREE please use:\
-\
-Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh\
-(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating\
-maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.\
-https://doi.org/10.1093/molbev/msu300\
-\
-Since you used ultrafast bootstrap (UFBoot) please also cite: \
-\
-Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,\
-and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap\
-approximation. Mol Biol Evol, in press.\
-https://doi.org/10.1093/molbev/msx281\
-\
-Since you used partition models please also cite:\
-\
-Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)\
-Terrace aware data structure for phylogenomic inference from\
-supermatrices. Syst Biol, 65:997-1008.\
-https://doi.org/10.1093/sysbio/syw037\
-\
-SEQUENCE ALIGNMENT\
-------------------\
-\
-Input data: 29 taxa with 9 partitions and 1939 total sites (6.251% missing data)\
-\
-  ID  Name   Type	Seq	Site	Unique	Infor	Invar	Const\
-   1  GENE1  AA	27	314	277	158	99	99\
-   2  GENE2  AA	27	120	118	85	21	21\
-   3  GENE3  AA	28	367	191	69	249	249\
-   4  GENE4  AA	28	225	199	110	68	68\
-   5  GENE5  AA	24	213	202	129	53	53\
-   6  GENE6  AA	26	145	137	80	42	42\
-   7  GENE7  AA	28	141	135	80	29	29\
-   8  GENE8  AA	28	281	206	113	116	116\
-   9  GENE9  AA	28	133	109	64	45	45\
-\
-Column meanings:\
-  Unique: Number of unique site patterns\
-  Infor:  Number of parsimony-informative sites\
-  Invar:  Number of invariant sites\
-  Const:  Number of constant sites (can be subset of invariant sites)\
-\
-ModelFinder\
------------\
-\
-Best-fit model according to BIC: LG+I+G4:GENE1,LG+G4:GENE2,LG+I+G4:GENE3,LG+G4:GENE4,LG+G4:GENE5,LG+I+G4:GENE6,LG+G4:GENE7,LG+I+G4:GENE8,LG+G4:GENE9\
-\
-List of best-fit models per partition:\
-\
-  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC\
-   1  LG+I+G4          -6492.4374  12990.8747 + 0.0000  12990.9522 + 0.0000  13002.1229 + 0.0000\
-   2  LG+G4            -2560.6109   5125.2217 + 0.0000   5125.3243 + 0.0000   5130.7967 + 0.0000\
-   3  LG+I+G4          -3227.8523   6461.7046 + 0.0000   6461.7708 + 0.0000   6473.4207 + 0.0000\
-   4  LG+G4            -4540.8932   9085.7865 + 0.0000   9085.8406 + 0.0000   9092.6187 + 0.0000\
-   5  LG+G4            -4426.8783   8857.7566 + 0.0000   8857.8137 + 0.0000   8864.4792 + 0.0000\
-   6  LG+I+G4          -3049.8894   6105.7788 + 0.0000   6105.9490 + 0.0000   6114.7090 + 0.0000\
-   7  LG+G4            -3212.6745   6429.3490 + 0.0000   6429.4360 + 0.0000   6435.2466 + 0.0000\
-   8  LG+I+G4          -4423.8339   8853.6677 + 0.0000   8853.7544 + 0.0000   8864.5828 + 0.0000\
-   9  LG+G4            -2192.3248   4388.6496 + 0.0000   4388.7419 + 0.0000   4394.4303 + 0.0000\
-\
-AIC, w-AIC   : Akaike information criterion scores and weights.\
-AICc, w-AICc : Corrected AIC scores and weights.\
-BIC, w-BIC   : Bayesian information criterion scores and weights.\
-\
-Plus signs denote the 95% confidence sets.\
-Minus signs denote significant exclusion.\
-\
-SUBSTITUTION PROCESS\
---------------------\
-\
-Edge-linked-proportional partition model but separate models between partitions\
-\
-  ID  Model           Speed  Parameters\
-   1  LG+I+G4        1.2283  LG+I\{0.203534\}+G4\{0.969446\}\
-   2  LG+G4          1.4719  LG+G4\{0.936416\}\
-   3  LG+I+G4        0.2804  LG+I\{0.389499\}+G4\{0.43243\}\
-   4  LG+G4          1.0416  LG+G4\{0.554701\}\
-   5  LG+G4          1.5046  LG+G4\{0.653578\}\
-   6  LG+I+G4        1.6414  LG+I\{0.190752\}+G4\{0.946186\}\
-   7  LG+G4          1.3261  LG+G4\{0.711188\}\
-   8  LG+I+G4        0.6667  LG+I\{0.243607\}+G4\{0.893457\}\
-   9  LG+G4          0.8017  LG+G4\{0.560925\}\
-\
-MAXIMUM LIKELIHOOD TREE\
------------------------\
-\
-Log-likelihood of the tree: -34097.9719 (s.e. 685.7190)\
-Unconstrained log-likelihood (without tree): -9864.5925\
-Number of free parameters (#branches + #model parameters): 76\
-Akaike information criterion (AIC) score: 68347.9439\
-Corrected Akaike information criterion (AICc) score: 68354.2296\
-Bayesian information criterion (BIC) score: 68771.2584\
-\
-Total tree length (sum of branch lengths): 4.8511\
-Sum of internal branch lengths: 1.1281 (23.2553% of tree length)\
-\
-NOTE: Tree is UNROOTED although outgroup taxon 'Amborella_trichopoda' is drawn at root\
-Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)\
-\
-+------Amborella_trichopoda\
-|\
-|  +-----Arabidopsis_thaliana\
-+--| (100/100)\
-|  |   +--Brachypodium_distachyon\
-|  +---| (100/100)\
-|      +--Oryza_sativa\
-|\
-|     +--------Azolla_filiculoides\
-|  +--| (96.7/78)\
-|  |  |              +----------Chara_braunii\
-|  |  |           +--| (98/89)\
-|  |  |           |  +----------Klebsormidium_flaccidum\
-|  |  |        +--| (95.2/39)\
-|  |  |        |  |                           +-----Chlamydomonas_reinhardtii\
-|  |  |        |  |                +----------| (100/100)\
-|  |  |        |  |                |          +----Volvox_carteri\
-|  |  |        |  |            +---| (97/98)\
-|  |  |        |  |            |   +-------------------------------Ulva_mutabilis\
-|  |  |        |  |     +------| (100/99)\
-|  |  |        |  |     |      +----------------Coccomyxa_subellipsoidea\
-|  |  |        |  |  +--| (28.7/83)\
-|  |  |        |  |  |  |               +-----------Micromonas_pusilla\
-|  |  |        |  |  |  +---------------| (100/100)\
-|  |  |        |  |  |                  +-----------------------Ostreococcus_lucimarius\
-|  |  |        |  +--| (76/44)\
-|  |  |        |     +------------------Mesostigma_viride\
-|  |  |     +--| (35.9/22)\
-|  |  |     |  |              +--------Cosmarium_broomeei\
-|  |  |     |  |           +--| (78.6/90)\
-|  |  |     |  |           |  +------Micrasterias_frimbriata\
-|  |  |     |  |     +-----| (100/100)\
-|  |  |     |  |     |     +-----Penium_margaritaceum\
-|  |  |     |  |  +--| (62.9/75)\
-|  |  |     |  |  |  |  +----------Cylindrocystis_brebissonii\
-|  |  |     |  |  |  +--| (75.8/82)\
-|  |  |     |  |  |     |     +----------Mougeotia_scalaris\
-|  |  |     |  |  |     |  +--| (3.5/45)\
-|  |  |     |  |  |     |  |  +--------Zygnema_circumcarinatum\
-|  |  |     |  |  |     +--| (99.4/100)\
-|  |  |     |  |  |        +----Zygnemopsis_sp\
-|  |  |     |  +--| (58.6/47)\
-|  |  |     |     |      +-----Serritaenia_sp\
-|  |  |     |     |   +--| (95.6/98)\
-|  |  |     |     |   |  +------Nesotaenium_endlicherianum\
-|  |  |     |     +---| (100/97)\
-|  |  |     |         +----------------Spirogyra_pratensis\
-|  |  |  +--| (98.4/92)\
-|  |  |  |  +---------------Coleochaete_scutata\
-|  |  +--| (91.5/82)\
-|  |     |     +-------Marchantia_polymorpha\
-|  |     |  +--| (84.9/84)\
-|  |     |  |  +------------Physcomitrium_patens\
-|  |     +--| (83.1/58)\
-|  |        +-------Selaginella_moellendorffii\
-+--| (98.1/79)\
-   +----Picea_abies\
-\
-Tree in newick format:\
-\
-(Amborella_trichopoda:0.0940088296,(Arabidopsis_thaliana:0.0724930383,(Brachypodium_distachyon:0.0247706274,Oryza_sativa:0.0292061212)100/100:0.0493614685)100/100:0.0420884314,((Azolla_filiculoides:0.1103724678,(((((Chara_braunii:0.1334170377,Klebsormidium_flaccidum:0.1327149759)98/89:0.0332277710,(((((Chlamydomonas_reinhardtii:0.0752468126,Volvox_carteri:0.0593027409)100/100:0.1373259176,Ulva_mutabilis:0.3866763818)97/98:0.0489256820,Coccomyxa_subellipsoidea:0.2059463613)100/99:0.0905248781,(Micromonas_pusilla:0.1416160874,Ostreococcus_lucimarius:0.2855725126)100/100:0.1994004483)28.7/83:0.0337825802,Mesostigma_viride:0.2282117332)76/44:0.0201000758)95.2/39:0.0194383798,((((Cosmarium_broomeei:0.1158640744,Micrasterias_frimbriata:0.0903765170)78.6/90:0.0330813691,Penium_margaritaceum:0.0733918055)100/100:0.0786743804,(Cylindrocystis_brebissonii:0.1393422328,((Mougeotia_scalaris:0.1374977290,Zygnema_circumcarinatum:0.1072396003)3.5/45:0.0203893007,Zygnemopsis_sp:0.0646363303)99.4/100:0.0346268055)75.8/82:0.0268227242)62.9/75:0.0198159676,((Serritaenia_sp:0.0804170450,Nesotaenium_endlicherianum:0.0942138114)95.6/98:0.0316580625,Spirogyra_pratensis:0.2022563429)100/97:0.0541220850)58.6/47:0.0125920826)35.9/22:0.0127093982,Coleochaete_scutata:0.1973370028)98.4/92:0.0330533141,((Marchantia_polymorpha:0.1044984462,Physcomitrium_patens:0.1644947613)84.9/84:0.0179565583,Selaginella_moellendorffii:0.1029178838)83.1/58:0.0164417374)91.5/82:0.0192796864)96.7/78:0.0209109078,Picea_abies:0.0688889235)98.1/79:0.0218164851);\
-\
-CONSENSUS TREE\
---------------\
-\
-Consensus tree is constructed from 1000bootstrap trees\
-Log-likelihood of consensus tree: -34097.972119\
-Robinson-Foulds distance between ML tree and consensus tree: 0\
-\
-Branches with support >0.000000% are kept (extended consensus)\
-Branch lengths are optimized by maximum likelihood on original alignment\
-Numbers in parentheses are bootstrap supports (%)\
-\
-+------Amborella_trichopoda\
-|\
-|  +-----Arabidopsis_thaliana\
-+--| (100)\
-|  |   +--Brachypodium_distachyon\
-|  +---| (100)\
-|      +--Oryza_sativa\
-|\
-|     +--------Azolla_filiculoides\
-|  +--| (78)\
-|  |  |              +----------Chara_braunii\
-|  |  |           +--| (89)\
-|  |  |           |  +----------Klebsormidium_flaccidum\
-|  |  |        +--| (39)\
-|  |  |        |  |                           +-----Chlamydomonas_reinhardtii\
-|  |  |        |  |                +----------| (100)\
-|  |  |        |  |                |          +----Volvox_carteri\
-|  |  |        |  |            +---| (98)\
-|  |  |        |  |            |   +-------------------------------Ulva_mutabilis\
-|  |  |        |  |     +------| (99)\
-|  |  |        |  |     |      +----------------Coccomyxa_subellipsoidea\
-|  |  |        |  |  +--| (83)\
-|  |  |        |  |  |  |               +-----------Micromonas_pusilla\
-|  |  |        |  |  |  +---------------| (100)\
-|  |  |        |  |  |                  +-----------------------Ostreococcus_lucimarius\
-|  |  |        |  +--| (44)\
-|  |  |        |     +------------------Mesostigma_viride\
-|  |  |     +--| (22)\
-|  |  |     |  |              +--------Cosmarium_broomeei\
-|  |  |     |  |           +--| (90)\
-|  |  |     |  |           |  +------Micrasterias_frimbriata\
-|  |  |     |  |     +-----| (100)\
-|  |  |     |  |     |     +-----Penium_margaritaceum\
-|  |  |     |  |  +--| (75)\
-|  |  |     |  |  |  |  +----------Cylindrocystis_brebissonii\
-|  |  |     |  |  |  +--| (82)\
-|  |  |     |  |  |     |     +----------Mougeotia_scalaris\
-|  |  |     |  |  |     |  +--| (45)\
-|  |  |     |  |  |     |  |  +--------Zygnema_circumcarinatum\
-|  |  |     |  |  |     +--| (100)\
-|  |  |     |  |  |        +----Zygnemopsis_sp\
-|  |  |     |  +--| (47)\
-|  |  |     |     |      +-----Serritaenia_sp\
-|  |  |     |     |   +--| (98)\
-|  |  |     |     |   |  +------Nesotaenium_endlicherianum\
-|  |  |     |     +---| (97)\
-|  |  |     |         +----------------Spirogyra_pratensis\
-|  |  |  +--| (92)\
-|  |  |  |  +---------------Coleochaete_scutata\
-|  |  +--| (82)\
-|  |     |     +-------Marchantia_polymorpha\
-|  |     |  +--| (84)\
-|  |     |  |  +------------Physcomitrium_patens\
-|  |     +--| (58)\
-|  |        +-------Selaginella_moellendorffii\
-+--| (79)\
-   +----Picea_abies\
-\
-\
-Consensus tree in newick format: \
-\
-(Amborella_trichopoda:0.0940106638,(Arabidopsis_thaliana:0.0724946336,(Brachypodium_distachyon:0.0247708074,Oryza_sativa:0.0292068722)100:0.0493632053)100:0.0420890770,((Azolla_filiculoides:0.1103748477,(((((Chara_braunii:0.1334231842,Klebsormidium_flaccidum:0.1327167566)89:0.0332292999,(((((Chlamydomonas_reinhardtii:0.0752487762,Volvox_carteri:0.0593052908)100:0.1373178063,Ulva_mutabilis:0.3866991415)98:0.0489365097,Coccomyxa_subellipsoidea:0.2059486268)99:0.0905772534,(Micromonas_pusilla:0.1416255580,Ostreococcus_lucimarius:0.2855772367)100:0.1994506469)83:0.0335657544,Mesostigma_viride:0.2281248605)44:0.0202393001)39:0.0194402152,((((Cosmarium_broomeei:0.1158677248,Micrasterias_frimbriata:0.0903798278)90:0.0330819422,Penium_margaritaceum:0.0733941970)100:0.0786763985,(Cylindrocystis_brebissonii:0.1393459324,((Mougeotia_scalaris:0.1375032263,Zygnema_circumcarinatum:0.1072430076)45:0.0203882417,Zygnemopsis_sp:0.0646381952)100:0.0346284548)82:0.0268236959)75:0.0198136375,((Serritaenia_sp:0.0804196373,Nesotaenium_endlicherianum:0.0942176515)98:0.0316576836,Spirogyra_pratensis:0.2022636749)97:0.0541257998)47:0.0125923020)22:0.0127080432,Coleochaete_scutata:0.1973432364)92:0.0330567561,((Marchantia_polymorpha:0.1045017510,Physcomitrium_patens:0.1644992312)84:0.0179561810,Selaginella_moellendorffii:0.1029205580)58:0.0164417930)82:0.0192790751)78:0.0209122591,Picea_abies:0.0688901669)79:0.0218168005);\
-\
-TIME STAMP\
-----------\
-\
-Date and time: Tue Dec  5 13:55:15 2023\
-Total CPU time used: 278.028 seconds (0h:4m:38s)\
-Total wall-clock time used: 280.1194959 seconds (0h:4m:40s)}
