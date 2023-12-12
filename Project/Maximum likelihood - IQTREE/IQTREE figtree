@@ -1,0 +1,131 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=29;
+	taxlabels
+	Amborella_trichopoda
+	Arabidopsis_thaliana
+	Azolla_filiculoides
+	Brachypodium_distachyon
+	Chara_braunii
+	Chlamydomonas_reinhardtii
+	Coccomyxa_subellipsoidea
+	Coleochaete_scutata
+	Cosmarium_broomeei
+	Cylindrocystis_brebissonii
+	Klebsormidium_flaccidum
+	Marchantia_polymorpha[&!color=#000000]
+	Mesostigma_viride
+	Micrasterias_frimbriata
+	Micromonas_pusilla
+	Mougeotia_scalaris
+	Nesotaenium_endlicherianum
+	Oryza_sativa
+	Ostreococcus_lucimarius
+	Penium_margaritaceum
+	Physcomitrium_patens[&!color=#000000]
+	Picea_abies
+	Selaginella_moellendorffii[&!color=#000000]
+	Serritaenia_sp
+	Spirogyra_pratensis
+	Ulva_mutabilis
+	Volvox_carteri
+	Zygnema_circumcarinatum
+	Zygnemopsis_sp
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Amborella_trichopoda[&!color=#00ff00]:0.094009,(Arabidopsis_thaliana[&!color=#00ff00]:0.072493,(Brachypodium_distachyon[&!color=#00ff00]:0.024771,Oryza_sativa[&!color=#00ff00]:0.029206)[&label="100/100",!color=#00ff00]:0.049361)[&label="100/100",!color=#00ff00]:0.042088,((Azolla_filiculoides[&!color=#00ff00]:0.110372,(((((Chara_braunii[&!color=#ff00ff]:0.133417,Klebsormidium_flaccidum[&!color=#ff00ff]:0.132715)[&label="98/89",!color=#ff00ff]:0.033228,(((((Chlamydomonas_reinhardtii[&!color=#0000ff]:0.075247,Volvox_carteri[&!color=#0000ff]:0.059303)[&label="100/100",!color=#0000ff]:0.137326,Ulva_mutabilis[&!color=#0000ff]:0.386676)[&label="97/98",!color=#0000ff]:0.048926,Coccomyxa_subellipsoidea[&!color=#0000ff]:0.205946)[&label="100/99",!color=#0000ff]:0.090525,(Micromonas_pusilla[&!color=#0000ff]:0.141616,Ostreococcus_lucimarius[&!color=#0000ff]:0.285573)[&label="100/100",!color=#0000ff]:0.1994)[&label="28.7/83",!color=#000000]:0.033783,Mesostigma_viride[&!color=#ff00ff]:0.228212)[&label="76/44"]:0.0201)[&label="95.2/39"]:0.019438,((((Cosmarium_broomeei[&!color=#ff0000]:0.115864,Micrasterias_frimbriata[&!color=#ff0000]:0.090377)[&label="78.6/90",!color=#ff0000]:0.033081,Penium_margaritaceum[&!color=#ff0000]:0.073392)[&label="100/100",!color=#ff0000]:0.078674,(Cylindrocystis_brebissonii[&!color=#ff0000]:0.139342,((Mougeotia_scalaris[&!color=#ff0000]:0.137498,Zygnema_circumcarinatum[&!color=#ff0000]:0.10724)[&label="3.5/45",!color=#ff0000]:0.020389,Zygnemopsis_sp[&!color=#ff0000]:0.064636)[&label="99.4/100",!color=#ff0000]:0.034627)[&label="75.8/82",!color=#ff0000]:0.026823)[&label="62.9/75",!color=#ff0000]:0.019816,((Serritaenia_sp[&!color=#ff0000]:0.080417,Nesotaenium_endlicherianum[&!color=#ff00ff]:0.094214)[&label="95.6/98",!color=#ff0000]:0.031658,Spirogyra_pratensis[&!color=#ff0000]:0.202256)[&label="100/97",!color=#ff0000]:0.054122)[&label="58.6/47"]:0.012592)[&label="35.9/22"]:0.012709,Coleochaete_scutata[&!color=#ff00ff]:0.197337)[&label="98.4/92"]:0.033053,((Marchantia_polymorpha[&!color=#00ffff]:0.104498,Physcomitrium_patens[&!color=#00ffff]:0.164495)[&label="84.9/84",!color=#00ffff]:0.017957,Selaginella_moellendorffii[&!color=#00ffff]:0.102918)[&label="83.1/58",!color=#00ffff]:0.016442)[&label="91.5/82",!color=#00ff00]:0.01928)[&label="96.7/78",!color=#00ff00]:0.020911,Picea_abies[&!color=#00ff00]:0.068889)[&label="98.1/79",!color=#00ff00]:0.021816);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=3.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=true;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="label";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=10;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=true;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=244;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
